@@ -1,0 +1,13 @@
+[Unit]
+Description=Programa em python no autostart
+
+[Service]
+Type=simple
+WorkingDirectory=/home/dsm/serviceTest/
+ExecStart=/usr/bin/python3 /home/dsm/serviceTest/teste.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
